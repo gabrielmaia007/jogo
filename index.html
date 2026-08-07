@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flappy Bird Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <div id="game">
+
+
+        <!-- nuvens do fundo -->
+
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+
+
+
+        <!-- placar -->
+
+        <div id="score">
+            0
+        </div>
+
+
+
+        <!-- pássaro -->
+
+        <div id="bird">
+
+            <div id="eye"></div>
+
+            <div id="wing"></div>
+
+        </div>
+
+
+
+        <!-- canos aparecem aqui -->
+
+
+
+        <!-- chão -->
+
+        <div id="ground"></div>
+
+
+
+
+        <!-- tela inicial -->
+
+        <div id="startScreen">
+
+
+            <h1>
+                🐦 Flappy Bird Pro
+            </h1>
+
+
+            <p>
+                Clique ou aperte ESPAÇO para voar
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <!-- tela de derrota -->
+
+        <div id="gameOver">
+
+
+            <h1>
+                💀 GAME OVER
+            </h1>
+
+
+            <p>
+                Pontos:
+                <span id="finalScore">
+                    0
+                </span>
+            </p>
+
+
+            <p>
+                Recorde:
+                <span id="bestScore">
+                    0
+                </span>
+            </p>
+
+
+
+            <button onclick="restartGame()">
+
+                Jogar novamente
+
+            </button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
